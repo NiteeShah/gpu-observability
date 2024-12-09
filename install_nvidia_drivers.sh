@@ -19,7 +19,4 @@ sudo apt-get install -y cuda-toolkit-12-6 cuda-drivers
 # Install NVIDIA DCGM
 sudo apt-get install -y nvidia-dcgm
 
-# Pull NVIDIA DCGM Exporter Docker image
-sudo docker pull nvidia/dcgm-exporter:latest
-
 echo "NVIDIA drivers and CUDA Toolkit installed successfully. Run 'nvidia-smi' to verify."

@@ -15,4 +15,4 @@ sudo apt-get install -y grafana
 sudo systemctl enable grafana-server
 sudo systemctl start grafana-server
 
-echo "Grafana installed and running on port 3000."
+echo "Grafana installed and Metrics available at http://localhost:3000."
