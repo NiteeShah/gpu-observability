@@ -1,0 +1,12 @@
+[Unit]
+Description=NVIDIA DCGM Exporter
+After=docker.service
+Requires=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker run --rm --name=dcgm-exporter --gpus=all -p 9400:9400 -v /var/run/nvidia-dcgm:/var/run/nvidia-dcgm nvidia/dcgm-exporter
+
+[Install]
+WantedBy=multi-user.target
+

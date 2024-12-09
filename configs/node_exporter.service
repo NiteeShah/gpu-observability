@@ -1,0 +1,14 @@
+[Unit]
+Description=Prometheus Node Exporter
+Documentation=https://prometheus.io/
+After=network.target
+
+[Service]
+User=node_exporter
+Group=node_exporter
+ExecStart=/usr/local/bin/node_exporter
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target
