@@ -59,4 +59,4 @@ This ensures a robust and reliable monitoring setup.
 - **Test DCGM Exporter**: Visit `http://localhost:9400/metrics`
 - **Check Node Exporter**: Visit `http://localhost:9100/metrics`
 - **Check Prometheus**: Visit `http://localhost:9090`
-- **Grafana**: Visit 'http://localhost:3000'
+- **Grafana**: Visit `http://localhost:3000`
