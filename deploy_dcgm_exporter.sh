@@ -11,7 +11,7 @@ docker pull nvidia/dcgm-exporter:latest
 docker volume create dcgm-exporter-data
 
 # Set up DCGM Exporter as a systemd service
-sudo cp configs/dcgm-expoter.service /etc/systemd/system/
+sudo cp configs/dcgm-exporter.service  /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable dcgm-expoter
 sudo systemctl start dcgm-expoter
