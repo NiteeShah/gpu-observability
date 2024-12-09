@@ -22,4 +22,21 @@ sudo systemctl daemon-reload
 sudo systemctl enable prometheus
 sudo systemctl start prometheus
 
-echo "Prometheus installed and running. Metrics available at http://localhost:9090"
+# Add username and path for prometheus 
+sudo useradd -rs /bin/false prometheus
+sudo chown -R prometheus:prometheus /etc/prometheus
+sudo chown prometheus:prometheus /usr/local/bin/prometheus
+sudo chown prometheus:prometheus /usr/local/bin/promtool
+sudo vi /etc/prometheus/prometheus.yml
+sudo vi /etc/systemd/system/prometheus.service
+sudo systemctl daemon-reload
+sudo systemctl start prometheus
+sudo systemctl enable prometheus
+systemctl status prometheus
+sudo mkdir -p /var/lib/prometheus
+sudo chown -R prometheus:prometheus /var/lib/prometheus
+sudo chmod 755 /var/lib/prometheus
+sudo systemctl restart prometheus
+systemctl status prometheus
+
+echo "Prometheus installed and running. Metrics available at http://localhost:9090/graph"

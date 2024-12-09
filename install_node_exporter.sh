@@ -10,7 +10,8 @@ tar -xvzf node_exporter-1.6.1.linux-amd64.tar.gz
 sudo mv node_exporter-1.6.1.linux-amd64/node_exporter /usr/local/bin/
 rm -rf node_exporter-1.6.1.linux-amd64*
 
-# Set up Node Exporter as a systemd service
+# Set up Node Exporter as a systemd service and add user 
+sudo useradd -rs /bin/false node_exporter
 sudo cp configs/node_exporter.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable node_exporter
