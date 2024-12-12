@@ -56,7 +56,7 @@ This ensures a robust and reliable monitoring setup.
 ## Troubleshooting
 - **Verify NVIDIA Drivers**: `nvidia-smi`
 - **Check Docker**: `sudo systemctl status docker`
-- **Test DCGM Exporter**: Visit `http://localhost:9400/metrics` example: `http://141.125.108.172:9400/metrics`
-- **Check Node Exporter**: Visit `http://localhost:9100/metrics` example: `http://141.125.108.172:9100/metrics`
-- **Check Prometheus**: Visit `http://localhost:9090` example: `http://141.125.108.172:9090/graph`
-- **Grafana**: Visit `http://localhost:3000` example `http://141.125.108.172:3000/`
+- **Test DCGM Exporter**: Visit `http://localhost:9400/metrics` example: `http://x.x.x.x:9400/metrics`
+- **Check Node Exporter**: Visit `http://localhost:9100/metrics` example: `http://x.x.x.x:9100/metrics`
+- **Check Prometheus**: Visit `http://localhost:9090` example: `http://x.x.x.x:9090/graph`
+- **Grafana**: Visit `http://localhost:3000` example `http://x.x.x.x:3000/`
