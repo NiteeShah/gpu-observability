@@ -1,4 +1,4 @@
-# GPU Observability Setup
+# GPU Observability Setup on IBM Cloud
 
 This repository contains scripts to set up observability for GPU-based virtual machines (VMs).
 
