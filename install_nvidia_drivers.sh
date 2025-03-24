@@ -17,6 +17,7 @@ sudo apt-get update
 sudo apt-get install -y cuda-toolkit-12-6 cuda-drivers
 
 # Install NVIDIA DCGM
-sudo apt-get install -y nvidia-dcgm
+# sudo apt-get install -y nvidia-dcgm
+sudo apt install -y datacenter-gpu-manager
 
 echo "NVIDIA drivers and CUDA Toolkit installed successfully. Run 'nvidia-smi' to verify."
